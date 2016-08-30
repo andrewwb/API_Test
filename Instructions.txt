@@ -1,0 +1,19 @@
+///// Api Test Instructions /////
+
+1. Create Model
+2. Add DBSet<CLASS> prop to the ApplicationDbContext class
+3. "Add-Migration start" & "Update-Database" commands in Package Manager Console
+4. Make Infrastructure folder
+5. Create Repository
+6. Dependancy Inject ApplicationDbContext in your Repository
+7. Create IQueryable method for GETTING db items
+8. Create Service
+9. Dependancy Inject Repository in your Service
+10. Create IEnumerable method that calls Repository method
+11. Create API Controller Class
+12. Dependancy Inject Service in your API Controller
+13. Modify [HttpGet] method to call your Service method
+14. Add all services and repositories to Startup.cs
+15. Add a field to your angular HomeController
+16. In angular HomeController constructor, dependancy inject $http & call the $http.get('api/[controller]') method
+17. Modify HTML page
